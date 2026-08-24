@@ -35,7 +35,7 @@ function InspectionSection({ title, note, list }: { title: string; note: string;
         )}
       </h2>
       <p className="text-xs text-muted px-4 pt-3">{note}</p>
-      <table className="w-full text-sm mt-2">
+      <div className="overflow-x-auto"><table className="w-full text-sm mt-2">
         <thead>
           <tr className="text-[11px] uppercase tracking-wide text-muted bg-bg">
             <th className="text-left px-4 py-2.5 border-b border-line">Unit</th>
@@ -68,7 +68,7 @@ function InspectionSection({ title, note, list }: { title: string; note: string;
             </tr>
           )}
         </tbody>
-      </table>
+      </table></div>
     </div>
   );
 }

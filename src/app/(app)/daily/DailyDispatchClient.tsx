@@ -166,7 +166,7 @@ export function DailyDispatchClient({
         </span>
       </div>
 
-      <div className="grid grid-cols-[340px_1fr] gap-5">
+      <div className="grid grid-cols-1 md:grid-cols-[340px_1fr] gap-5">
         <div className="card-surface rounded-xl overflow-hidden">
           <h3 className="text-sm font-bold text-navy px-4 py-3 border-b border-line">
             Jobs <span className="text-muted font-normal">({jobs.length})</span>

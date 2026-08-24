@@ -26,7 +26,7 @@ function PartsSection({ title, list, onStatus }: { title: string; list: PartRow[
       <h2 className="text-sm font-bold text-navy px-4 py-3 border-b border-line">
         {title} <span className="text-muted font-normal">({list.length})</span>
       </h2>
-      <table className="w-full text-sm">
+      <div className="overflow-x-auto"><table className="w-full text-sm">
         <thead>
           <tr className="text-[11px] uppercase tracking-wide text-muted bg-bg">
             <th className="text-left px-4 py-2.5 border-b border-line">Part</th>
@@ -93,7 +93,7 @@ function PartsSection({ title, list, onStatus }: { title: string; list: PartRow[
             </tr>
           )}
         </tbody>
-      </table>
+      </table></div>
     </div>
   );
 }
@@ -135,7 +135,7 @@ export function PartsClient({
 
   return (
     <div>
-      <div className="flex items-start justify-between mb-5 gap-4">
+      <div className="flex items-start justify-between mb-5 gap-4 flex-wrap">
         <div>
           <h1 className="text-2xl font-bold text-navy">Parts to Order</h1>
           <p className="text-muted text-sm mt-1">

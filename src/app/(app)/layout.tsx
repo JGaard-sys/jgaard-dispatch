@@ -21,14 +21,14 @@ export default async function AppLayout({
       .toUpperCase();
 
   return (
-    <div className="flex min-h-screen bg-bg">
+    <div className="flex flex-col md:flex-row min-h-screen bg-bg">
       <Sidebar
         items={items}
         userLabel={profile.short_name ?? profile.name}
         userInitials={initials}
         actingOwner={profile.acting_owner}
       />
-      <main className="flex-1 p-6 max-w-[1400px]">{children}</main>
+      <main className="flex-1 p-4 md:p-6 max-w-[1400px] w-full">{children}</main>
     </div>
   );
 }

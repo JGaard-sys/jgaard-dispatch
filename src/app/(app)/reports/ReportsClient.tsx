@@ -43,7 +43,7 @@ export function ReportsClient({ initialReports }: { initialReports: ReportRow[] 
 
   return (
     <div>
-      <div className="flex items-start justify-between mb-5 gap-4">
+      <div className="flex items-start justify-between mb-5 gap-4 flex-wrap">
         <div>
           <h1 className="text-2xl font-bold text-navy">Reports</h1>
           <p className="text-muted text-sm mt-1">Weekly check-ins — what happened, what&apos;s next, what needs attention.</p>

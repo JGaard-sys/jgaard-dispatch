@@ -143,7 +143,7 @@ export function ShopClient({
 
   return (
     <div>
-      <div className="flex items-start justify-between mb-5 gap-4">
+      <div className="flex items-start justify-between mb-5 gap-4 flex-wrap">
         <div>
           <h1 className="text-2xl font-bold text-navy">Mechanic Work</h1>
           <p className="text-muted text-sm mt-1">
@@ -182,7 +182,7 @@ export function ShopClient({
         </div>
       </div>
 
-      <div className="grid grid-cols-[340px_1fr] gap-5">
+      <div className="grid grid-cols-1 md:grid-cols-[340px_1fr] gap-5">
         <div>
           <div className="card-surface rounded-xl overflow-hidden mb-4">
             <h3 className="text-sm font-bold text-navy px-4 py-3 border-b border-line">

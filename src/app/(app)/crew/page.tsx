@@ -21,7 +21,7 @@ export default async function CrewPage() {
       />
 
       <Card title="👷 All employees" count={crew.length}>
-        <table className="w-full text-sm">
+        <div className="overflow-x-auto"><table className="w-full text-sm">
           <thead>
             <tr className="text-[11px] uppercase tracking-wide text-muted bg-bg">
               <th className="text-left px-4 py-2.5 border-b border-line">Name</th>
@@ -49,7 +49,7 @@ export default async function CrewPage() {
               </tr>
             )}
           </tbody>
-        </table>
+        </table></div>
       </Card>
     </div>
   );

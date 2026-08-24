@@ -81,7 +81,7 @@ export function ProjectsClient({ initialProjects }: { initialProjects: ProjectRo
 
   return (
     <div>
-      <div className="flex items-start justify-between mb-5 gap-4">
+      <div className="flex items-start justify-between mb-5 gap-4 flex-wrap">
         <div>
           <h1 className="text-2xl font-bold text-navy">Projects</h1>
           <p className="text-muted text-sm mt-1">
@@ -99,7 +99,7 @@ export function ProjectsClient({ initialProjects }: { initialProjects: ProjectRo
         </button>
       </div>
 
-      <div className="grid grid-cols-[340px_1fr] gap-5">
+      <div className="grid grid-cols-1 md:grid-cols-[340px_1fr] gap-5">
         <div className="card-surface rounded-xl overflow-hidden">
           <h3 className="text-sm font-bold text-navy px-4 py-3 border-b border-line">
             Projects <span className="text-muted font-normal">({sorted.length})</span>

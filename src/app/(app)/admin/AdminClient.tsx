@@ -71,7 +71,7 @@ export function AdminClient({
 
       <div className="card-surface rounded-xl mb-5 overflow-hidden">
         <h2 className="text-sm font-bold text-navy px-4 py-3 border-b border-line">👤 People &amp; access</h2>
-        <table className="w-full text-sm">
+        <div className="overflow-x-auto"><table className="w-full text-sm">
           <thead>
             <tr className="text-[11px] uppercase tracking-wide text-muted bg-bg">
               <th className="text-left px-4 py-2.5 border-b border-line">Name</th>
@@ -120,7 +120,7 @@ export function AdminClient({
               </tr>
             )}
           </tbody>
-        </table>
+        </table></div>
       </div>
 
       <div className="card-surface rounded-xl p-5 mb-5">
@@ -149,7 +149,7 @@ export function AdminClient({
         <h2 className="text-sm font-bold text-navy px-4 py-3 border-b border-line">
           🔢 Standard crew per unit type
         </h2>
-        <table className="w-full text-sm">
+        <div className="overflow-x-auto"><table className="w-full text-sm">
           <thead>
             <tr className="text-[11px] uppercase tracking-wide text-muted bg-bg">
               <th className="text-left px-4 py-2.5 border-b border-line">Unit type</th>
@@ -182,7 +182,7 @@ export function AdminClient({
               </tr>
             ))}
           </tbody>
-        </table>
+        </table></div>
       </div>
     </div>
   );
